@@ -1,20 +1,19 @@
 body {
     background-image: url(../image/fon.jpg);
-    /* background-color: #FFFFF0; */
     font-family: 'Courier New', Courier, monospace;
     margin: 20px 7px 7px 0;
 }
 .nav_bar {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .nav_logo{
-    background: url(../image/logo2.jpg) no-repeat center center;
+    background: url(../image/logo.jpg) no-repeat center center;
     background-size: 100%;
     width: 80px;
     height: 80px;
-    margin: 7px 80px 10px 0px;
+    margin: 7px 80px 5px 10px;
 }
 .nav_text{
     display: flex;
@@ -26,13 +25,34 @@ body {
     background-size: 100%;
     width: 328px;
     height: 428px;
-    margin: 7px 30px 10px 0px; 
+    margin: 5px 10px 10px 0px; 
 }
 .fr {
-    border: 10px inset rgb(91, 121, 145);
-    margin: 20px 7px 7px 0;
-    padding: 10px;
+    border: 4px solid rgb(91, 121, 145);
+    margin: 15px 7px 7px 0;
+    padding-top: 7px;
 }
 .quote {
     text-align: left;
+}
+.button_js {
+    text-align: center;
+}
+#button1 {
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 40px #eee;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
+    width: 328px;
+    height: 40px;
+}
+
+#button1:hover {
+     background-position: right center;
+}
+#demo {
+    margin-top: 10px;
 }
