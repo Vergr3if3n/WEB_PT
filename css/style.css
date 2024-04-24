@@ -1,0 +1,38 @@
+body {
+    background-image: url(../image/fon.jpg);
+    /* background-color: #FFFFF0; */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px 7px 7px 0;
+}
+.nav_bar {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.nav_logo{
+    background: url(../image/logo2.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 80px;
+    height: 80px;
+    margin: 7px 80px 10px 0px;
+}
+.nav_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo {
+    background: url(../image/photo.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 328px;
+    height: 428px;
+    margin: 7px 30px 10px 0px; 
+}
+.fr {
+    border: 10px inset rgb(91, 121, 145);
+    margin: 20px 7px 7px 0;
+    padding: 10px;
+}
+.quote {
+    text-align: left;
+}
