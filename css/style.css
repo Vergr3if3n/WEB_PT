@@ -44,9 +44,12 @@ h1 {
 .button_js {
     text-align: center;
 }
+.form_bloc {
+    margin-top: 10%;
+}
 .form {
     margin: 1%;
-    width: 380px;
+    width: 400px;
     border-radius: 30px;
 }
 .btn_reg {
@@ -67,7 +70,7 @@ h1 {
     height: 40px;
 }
 #button1:hover {
-     background-position: right center;
+    background-position: right center;
 }
 #demo {
     margin-top: 10px;

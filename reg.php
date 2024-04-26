@@ -20,13 +20,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form method="POST" action="/reg.php">
+                    <form class="form_bloc" method="POST" action="/reg.php">
                         <div class="row form_reg"><input class="form" type="email" name="email" placeholder="Email"></div>
                         <div class="row form_reg"><input class="form" type="text" name="login" placeholder="Login"></div>
                         <div class="row form_reg"><input class="form" type="password" name="password" placeholder="Password"></div>
                         <button type="submit" class="btn_reg" id="button1" name="submit">Продолжить</button>
                     </form>
-                </div>
+                 </div>
             </div>
         </div>    
     </div>        

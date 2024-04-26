@@ -28,7 +28,7 @@ $sql = "CREATE TABLE IF NOT EXISTS users(
   pass VARCHAR(50) NOT NULL
 )";
 
-if(!mysqli_qyery($link, $sql)) {
+if(!mysqli_query($link, $sql)) {
   echo "Не удалось создать таблицу Users";
 }
 
@@ -38,7 +38,7 @@ $sql = "CREATE TABLE IF NOT EXISTS posts(
   main_text VARCHAR(400) NOT NULL,
 )";
 
-if(!mysqli_qyery($link, $sql)) {
+if(!mysqli_query($link, $sql)) {
   echo "Не удалось создать таблицу Users";
 }
 
