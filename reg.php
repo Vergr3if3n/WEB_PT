@@ -24,7 +24,7 @@
                         <div class="row form_reg"><input class="form" type="email" name="email" placeholder="Email"></div>
                         <div class="row form_reg"><input class="form" type="text" name="login" placeholder="Login"></div>
                         <div class="row form_reg"><input class="form" type="password" name="password" placeholder="Password"></div>
-                        <button type="submit" class="btn_red btn_reg" id="button1" name="submit">Продолжить</button>
+                        <button type="submit" class="btn_reg" id="button1" name="submit">Продолжить</button>
                     </form>
                 </div>
             </div>
@@ -32,3 +32,25 @@
     </div>        
 </body>
 </html>
+
+<?php
+
+require_once('db.php');
+
+$link = mysqli_connect('127.0.0.1', 'root', 'root', 'finweb');
+
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
+    $username = $_POST['login'];
+    $password = $_POST['password'];
+
+    if (!$email || !$username || !$password) die ('Пожалуйста введите все значения!');
+
+    $sql = "INSERT INTO users (email, username, pass) VALUES ('$email', '$username', '$password')";
+
+    if(!mysqli_query($link, $sql)) {
+        echo "Не удалось добавить пользователя";
+    }
+}
+
+?> 
