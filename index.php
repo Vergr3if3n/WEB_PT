@@ -18,7 +18,7 @@
                 
                 if (!isset($_COOKIE['User'])) {
                     ?>
-                        <p id="auth"><a href="/registration.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>, чтобы просматривать контент!</p>
+                        <p id="auth"><a href="/reg.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>, чтобы просматривать контент!</p>
                     <?php
                     } else {
                         // подключение к БД
