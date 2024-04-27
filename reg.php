@@ -37,6 +37,10 @@
 
 require_once('db.php');
 
+// if (isset($_COOKIE['User'])) {
+//     header("Location: login.php");
+// }
+
 $link = mysqli_connect('127.0.0.1', 'root', 'root', 'finweb');
 
 if (isset($_POST['submit'])) {
