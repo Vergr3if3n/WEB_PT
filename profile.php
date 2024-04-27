@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 button_js">
-                        <button id="button1">Получить скидку</button>
+                        <button id="button_main">Получить скидку</button>
                         <p id="demo"></p>
                     </div>
                 </div>
@@ -59,16 +59,55 @@
                     <div class="promo"></div>
                 </div>
             </div>
-            <div class="fr">
-                <ul>
-                    <li><a href="#">Политика конфиденциальности</a></li>
-                    <li><a href="#">Согласие на сбор и обработку персональных данных</a></li>
-                    <li><a href="#">Согласие на получение рекламно-информационных бюллютеней</a></li>
-                    <li><a href="#">Юридическая информация</a></li>                    
-                </ul>
+            <div calss="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="hello">
+                            Привет, <?php echo $_COOKIE['User']; ?>
+                        </h1>
+                    </div>
+                    <div class="col-7">
+                        <form method="POST" action="profile.php">
+                            <input type="text" class="form" type="text" name="title" placeholder="Заголовок вашего поста">
+                            <textarea name="text" class="tarea" cols="60" rows="5" placeholder="Текст вашего поста ..."></textarea>
+                            <button type="submit" class="btn_reg" id="button1" name="submit">Сохранить пост</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="fr">
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Согласие на сбор и обработку персональных данных</a></li>
+                        <li><a href="#">Согласие на получение рекламно-информационных бюллютеней</a></li>
+                        <li><a href="#">Юридическая информация</a></li>                    
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="js/button_script.js"></script>
 </body>
 </html>
+
+
+<?php 
+
+require_once('db.php');
+
+$link = mysqli_connect('127.0.0.1', 'root', 'root', 'finweb');
+
+if (isset($_POST['submit'])) {
+
+    $title = $_POST['title'];
+    $main_text = $_POST['text'];
+
+    if (!$title || !$main_text) die ("Заполните все поля");
+
+    $sql = "INSERT INTO posts (title, main_text) VALUES ('$title', '$main_text')";
+    
+    if (!mysqli_query($link, $sql)) die ("Не удалось добавить пост");
+}
+
+?>
