@@ -2,13 +2,16 @@ body {
     background-image: url(../image/fon.jpg);
     margin: 20px 7px 7px 0;
 }
+.h1 {
+    text-align: center;
+}
 
 
 
 .nav_bar {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 .nav_logo{
     background: url(../image/logo.jpg) no-repeat center center;
@@ -46,13 +49,15 @@ body {
     border-radius: 30px;
 }
 .btn_reg {
-    margin-top: 1%;
     margin-bottom: 4%;
     text-align: center;
 }
 .tarea {
     border-radius: 10px;
     margin: 0.5%;
+}
+.hello {
+    margin-top: 2%;
 }
 
 
@@ -66,7 +71,7 @@ body {
     background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
     width: 328px;
     height: 40px;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
 }
 #button_main:hover {
     background-position: right center;
