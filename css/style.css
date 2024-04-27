@@ -46,7 +46,10 @@ body {
 .form {
     margin: 0.5%;
     width: 400px;
-    border-radius: 30px;
+    border-radius: 10px;
+}
+.formf {
+    margin: 0.5%;
 }
 .btn_reg {
     margin-bottom: 4%;
@@ -85,6 +88,7 @@ body {
     background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
     width: 200px;
     height: 33px;
+    margin: 2%;
 }
 #button1:hover {
     background-position: right center;
