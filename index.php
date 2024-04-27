@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container nav_bar">
+        <div class="row">
+            <div class="row">
+                <div class="col-3 nav_logo"></div>
+                <div class="col-9">
+                    <div class="nav_text">FINSCHOOL</div> 
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12 index">
@@ -18,12 +28,21 @@
                 
                 if (!isset($_COOKIE['User'])) {
                     ?>
-                        <p id="auth"><a href="/reg.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>, чтобы просматривать контент!</p>
+                        <p id="auth"><a href="/reg.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>, чтобы просматривать контент</p>
                     <?php
                     } else {
-                        // подключение к БД
-                    }
+                        $link = mysqli_connect('127.0.0.1', 'root', 'root', 'finweb'); 
 
+                        $sql = "SELECT * FROM posts";
+                        $res = mysqli_query($link, $sql);
+                        if (mysqli_num_rows($res) >  0) {
+                            while ($post = mysqli_fetch_array($res)) {
+                                echo "<a href='/posts.php?id=" . $post["id"] . "'>" . $post['title'] . "</a><br>";
+                            }
+                            } else {
+                                echo "Записей пока нет";
+                            }
+                    }
                 ?>
             </div>
         </div>

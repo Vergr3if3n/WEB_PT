@@ -1,10 +1,6 @@
 body {
     background-image: url(../image/fon.jpg);
-    font-family: 'Courier New', Courier, monospace;
     margin: 20px 7px 7px 0;
-}
-h1 {
-    text-align: center;
 }
 
 
@@ -12,14 +8,14 @@ h1 {
 .nav_bar {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 7%;
 }
 .nav_logo{
     background: url(../image/logo.jpg) no-repeat center center;
     background-size: 100%;
     width: 80px;
     height: 80px;
-    margin: 7px 80px 5px 10px;
+    margin: 7px 80px 10px 10px;
 }
 .nav_text{
     display: flex;
@@ -29,8 +25,8 @@ h1 {
 .photo {
     background: url(../image/photo.jpg) no-repeat center center;
     background-size: 100%;
-    width: 200px;
-    height: 300px;
+    width: 328px;
+    height: 428px; 
     margin: 5px 10px 10px 0px; 
 }
 .fr {
@@ -44,14 +40,10 @@ h1 {
 .button_js {
     text-align: center;
 }
-.form_bloc {
-    margin-top: 20%;
-}
 .form {
     margin: 0.5%;
     width: 400px;
     border-radius: 30px;
-    padding: 0.5%;
 }
 .btn_reg {
     margin-top: 1%;
@@ -97,7 +89,6 @@ h1 {
 }
 #auth {
     text-align: center;
-    margin-top: 5%;
     border: 3px solid rgb(119, 125, 131);
     padding: 3%;
     background-color: rgb(255, 255, 255);

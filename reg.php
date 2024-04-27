@@ -11,12 +11,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container nav_bar">
         <div class="row">
-            <div class="col-12">
-                <h1>Регистрация</h1>
+            <div class="row">
+                <div class="col-3 nav_logo"></div>
+                <div class="col-9">
+                    <div class="nav_text">Регистрация</div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="container">
             <div class="row">
                 <div class="col-12">

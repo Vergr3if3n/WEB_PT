@@ -28,6 +28,8 @@
                 <br>Телефон: +7 (979) 583-17-35
                 <br>Почта: gennadiy03081975@ya.ru</a></p>
             </div>
+        </div>
+        <div class="row">
             <div class="row">
                 <div class="col-4">
                     <div class="row photo"></div>
