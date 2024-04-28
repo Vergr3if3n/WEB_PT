@@ -46,7 +46,7 @@ require_once('db.php');
 //     header("Location: profile.php");
 // }
 
-$link = mysqli_connect('127.0.0.1', 'root', 'root', 'finweb');
+$link = mysqli_connect('db', 'root', 'root', 'finweb');
 
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];

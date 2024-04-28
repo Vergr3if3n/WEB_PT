@@ -31,7 +31,7 @@
                         <p id="auth"><a href="/reg.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>, чтобы просматривать контент</p>
                     <?php
                     } else {
-                        $link = mysqli_connect('127.0.0.1', 'root', 'root', 'finweb'); 
+                        $link = mysqli_connect('db', 'root', 'root', 'finweb'); 
 
                         $sql = "SELECT * FROM posts";
                         $res = mysqli_query($link, $sql);
